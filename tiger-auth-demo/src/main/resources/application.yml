@@ -1,0 +1,16 @@
+#数据源
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://my.yunout.com:3306/tiger_study?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    # 配置Druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+  session:
+    store-type: none
+
+# Tomcat
+server:
+  port: 8070
+  connection-timeout: 5000ms
